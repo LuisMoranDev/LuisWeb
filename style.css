@@ -1,0 +1,240 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(-45deg, #ff0000, #3282b8);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Header for Name Portion */
+.header{
+    width: 100%; 
+    height: 30%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #f7f7f7;
+}
+        h1{
+            font-size: 60px;
+        }
+
+        span{
+            opacity: 0; 
+            transition: all 0.2s ease;
+
+        }
+
+        span.pop{
+            opacity: 1; 
+        }
+
+        .container{
+            background-color: #f7f7f7;
+            width: 85%;
+            /* height: 700px; */
+
+            /* margin-left: auto; 
+            margin-right: auto;  */
+            padding: 30px;
+            border-radius: 10px;
+
+        }
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+  }
+  
+            /* Style the buttons inside the tab */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                cursor: pointer;
+                padding: 10px 12px;
+                transition: 0.3s;
+                font-size: 1.7em;
+                font-weight: bold;
+                margin-right: 7px;
+            }
+            
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                background-color: #3282b8;
+                color: #f7f7f7;
+            }
+            
+            /* Create an active/current tablink class */
+            .tab button.active {
+                background-color: #ff0000;
+                color: #f7f7f7;
+            }
+            
+            /* Style the tab content */
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                margin-top: 20px;
+                border-top: none;
+            }
+
+.col{
+    margin-right: 10px;
+}
+
+
+.bio{
+    font-size: 18px;
+}
+
+.col-4{
+    margin-top: 20px;
+}
+
+.font-images{
+    text-align: center;
+    font-size: 40px;
+    color: #ff0000;
+}
+.description{
+    font-size: 15px;
+    margin-top: 0; 
+    font-weight: bold;
+}
+
+/* Section is used for experience tab */
+#portfolio{
+	background-color: #fafafa;
+	color: #252525;
+	padding: 2% 15%;
+	text-align:center;
+
+	
+
+}
+
+		#portfolio h2{
+			padding-bottom: 20px;
+			font-weight: bold;
+		}
+
+		#portfolio p{
+			font-family: 'Merriweather', serif;
+
+		}
+
+		.port{
+			padding: 3% 2%;
+
+		}
+		.port img{
+			height: 300px;
+			object-fit: cover;
+			object-position: center top;
+		}
+        
+/* Section is used for contact tab */
+#contacts{
+        color: #1a1c20;
+        }
+            .contact-img{
+                color: #ff0000; 
+            }
+            .contact-img:hover{
+                color: #3282b8;
+            }
+        
+
+
+
+@media only screen and (max-width: 990px){
+							
+
+    .list-group{
+         
+        padding: 0;
+        }
+
+    #portfolio .port{
+        padding-bottom: 15px;
+        }
+    .port img{
+        height: auto;
+        }
+                
+}
+@media only screen and (max-width: 800px){
+#top img{
+height: 100px;
+width: 100px;
+}
+#portfolio .port{
+padding-bottom: 15px;
+}
+
+}
+@media only screen and (max-width: 450px){
+h1, h2{
+font-size: 1.5em;
+}
+h3{
+font-size: 1em;
+}
+p{
+font-size: .8em;
+}
+
+#portfolio p{
+font-size: 1em;
+}
+
+#portfolio .port{
+padding-bottom: 15px;
+}
+
+#workExp  li{
+font-weight: normal;
+}
+#top img{
+height: 100px;
+width: 100px;
+}
+#education h1{
+font-size:1em;
+}
+#education h2{
+font-size: .8em;
+}
+#contact{
+padding: 1% 10%;
+font-size: .6em;
+}
+#contact h3{
+font-size: 1em;
+}
+
+}
+
